@@ -1,0 +1,1 @@
+export const API_URL='https://658d3bcc7c48dce94738c04c.mockapi.io/jobs/'
