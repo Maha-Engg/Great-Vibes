@@ -127,7 +127,10 @@ const id=editformdata.id
   await axios.put(API_URL+id, editformdata);
   setEditform(false);
   getData()
-  setCreatebtn(false)
+  setDisplay(true)
+    setDisplay2(true)
+    setCreatebtn(false)
+ 
 
 }
 
@@ -234,7 +237,7 @@ const next = (e) => {
 
 
 
-<div className="bg-[#E6E6E6] flex flex-wrap ">
+<div className="bg-[#E6E6E6] w-[1700px] flex flex-wrap flex-wrap-reverse ">
     
        {apidata[0] && apidata.map((user,index)=>{
 
@@ -246,7 +249,7 @@ return(
     <div className="w-[782px]  border-[1px] rounded-[10px] border-[#E6E6E6] m-8 px-6 py-4 bg-[#ffffff] ">
         <div className="w-[350px] flex ">
         <div>
-       <img  src={netflix} className="w-16 h-16"  alt="sorry"/>
+       <img  src={netflix} className="w-12 h-12"  alt="sorry"/>
        </div>
        <div className="ml-[8px]"  key={index}>
       <div className="flex justify-between">

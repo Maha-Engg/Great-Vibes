@@ -4,8 +4,8 @@ function Form(props) {
   return (
     <>
      <form onSubmit={props.handleSubmit}>
-
-<div className={`text-[#212121] ml-[400px]  bg-[#FAFAFA]  w-[513px] h-[500px] p-[32px]   ${props.display ? 'visible' : 'hidden'}`}>
+<div className='bg-[#E6E6E6] flex justify-center'>
+<div className={`text-[#212121]  bg-[#FAFAFA] border-[1px] rounded-[10px] border-[#E6E6E6]  w-[513px] h-[500px] p-[32px]   ${props.display ? 'visible' : 'hidden'}`}>
  
  
 <div className='flex justify-between '>
@@ -43,7 +43,7 @@ function Form(props) {
 
 
 
-<div className={` text-[#212121] ml-[400px]   bg-[#FAFAFA]  w-[513px] h-[500px] p-[32px]   ${props.display2 ?  'hidden' : 'visible'}  `  }>
+<div className={` text-[#212121]  border-[1px] rounded-[10px] border-[#E6E6E6]  bg-[#FAFAFA]  w-[513px] h-[500px] p-[32px]   ${props.display2 ?  'hidden' : 'visible'}  `  }>
 
 <div className='flex justify-between '>
 <h3 className='font-bold text-lg'> Create a job</h3>
@@ -88,6 +88,8 @@ External Apply
 <div className='flex justify-end '>
 <button type='submit' className='mt-24  rounded-[5px]  bg-[#1597E4] w-16  text-[#FFFFFF]' > Save </button>
 </div>
+</div>
+
 </div>
 </form>
     
